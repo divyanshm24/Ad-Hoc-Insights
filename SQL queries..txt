@@ -6,7 +6,7 @@ business in the  APAC  region.
           from dim_customer
           where customer = "AtliQ exclusive“ 
           and 
-          region = "APAC“
+          region = "APAC"
           ;
 
 
@@ -118,7 +118,7 @@ average_discount_percentage.
           join dim_customer c
                using (customer_code)
           where fiscal_year = 2021
-          and c. market = ‘india’
+          and c. market = "india"
           )
         select 
              customer_code,
@@ -149,7 +149,7 @@ Gross sales Amount.
              on s.product_code = g.product_code
         join dim_customer c
              on s.customer_code = c.customer_code
-        where customer = "AtliQ Exclusive“
+        where customer = "AtliQ Exclusive"
         group by month,year
         order by year asc 
         ;
@@ -232,6 +232,7 @@ rank_order.
          where rank_order in (1,2,3)
          order by division, rank_order asc
          ;
+
 
 
 
