@@ -26,7 +26,7 @@ Effectively converted complex business data into clear insights:
 - `SQL Queries/` — All data extraction scripts
 
 ## Usage
-1. Open `SQL Queries` folder and run scripts in MySQL to reproduce analysis
-2. Review the `Presentation` for strategic insights
+1. Open `SQL Queries` and run scripts in MySQL to reproduce analysis
+2. req 1 to req 10 are output files
 
 ---
